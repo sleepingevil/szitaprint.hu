@@ -53,7 +53,8 @@ body {
 @media screen and (orientation: portrait) and (max-width: 600px) {
   #main {
     justify-content: flex-start;
-    background-position: right center;
+    background-position: left center;
+    background-position-x: 66%;
     padding-top: 2rem;
   }
 }
