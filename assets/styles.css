@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Protest Strike", sans-serif;
+  font-family: "Lexend Tera", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: black;
@@ -14,6 +14,7 @@ body {
 
 #main {
   position: relative;
+  padding: 2rem;
   width: 100%;
   height: 100%;
   color: azure;
@@ -56,5 +57,15 @@ body {
     background-position: left center;
     background-position-x: 66%;
     padding-top: 2rem;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 700px) {
+  .display-1 {
+    font-size: calc(1.25rem + 2vw);
+  }
+
+  .display-6 {
+    font-size: 16px;
   }
 }
