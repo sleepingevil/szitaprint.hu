@@ -1,0 +1,17 @@
+{
+  "name": "szitaprint.hu",
+  "version": "1.0.0",
+  "description": "SzitaPrint.hu website",
+  "main": "index.js",
+  "repository": "https://github.com/sleepingevil/szitaprint.hu.git",
+  "author": "Almos Gabor",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node ./index.js"
+  },
+  "dependencies": {
+    "folder-hash": "^4.0.4",
+    "mustache": "^4.2.0",
+    "rimraf": "^5.0.5"
+  }
+}
