@@ -422,7 +422,7 @@ a#navlogo:visited {
   grid-template-columns: 48px auto;
   column-gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .positems p {
@@ -506,155 +506,6 @@ footer img {
   text-align: center;
   line-height: 64px;
   border-radius: 100%;
-}
-
-/************************ respo *********************/
-
-@media (max-width: 1199.98px) {
-  #elerhetosegek > .container {
-    max-width: none;
-  }
-}
-
-@media (max-width: 991.98px) {
-  body {
-    margin-top: 0;
-  }
-  #bannercontent {
-    padding-bottom: 0;
-    padding-top: var(--navbarheight);
-  }
-  #bannercontent > h1 {
-    font-size: 3rem;
-  }
-  #navigation .nav-item {
-    justify-content: flex-end;
-  }
-  #navigation .nav-link {
-    text-align: right;
-    transform-origin: right;
-    padding: 5px 0;
-  }
-  #navbarNavDropdown {
-    align-items: stretch;
-    justify-content: center;
-    max-width: 100%;
-    padding-right: 10px;
-  }
-  #szolgaltatasok {
-    margin-top: 100vh;
-  }
-  .navbar-brand.stihllg {
-    display: none;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .family {
-    border-bottom-width: 2px !important;
-  }
-
-  footer .col-md-4 {
-    width: 33%;
-  }
-
-  footer .container {
-    max-width: 100%;
-  }
-
-  footer .col-md-6 {
-    width: 100% !important;
-  }
-
-  .gallery .row {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gallery .txt {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 2% !important;
-  }
-
-  .gallery .txt h4 {
-    margin-bottom: 0;
-  }
-
-  .gallery .pic {
-    width: 100%;
-  }
-
-  #bemutatkozas .display-6,
-  #bemutatkozas p {
-    font-size: 1.2rem;
-  }
-
-  #bemutatkozas .display-6 {
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .imagewrap {
-    display: none;
-  }
-
-  footer {
-    padding: 1rem !important;
-  }
-
-  footer p {
-    display: none;
-  }
-
-  footer img {
-    max-width: 64px;
-  }
-
-  .gallery .row {
-    display: grid !important;
-    grid-template-columns: 1fr;
-  }
-
-  .gallery .txt {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  a.webshop {
-    display: block;
-    width: 64px;
-    position: absolute;
-    top: 33%;
-    right: 0;
-    transform: translateY(-50%);
-  }
-
-  .p-6 {
-    padding: 2rem 3rem !important;
-  }
-
-  #bannercontent h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-  }
-
-  #bannercontent h1 .small-mobile {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .small-mobile {
-    font-size: 65%;
-  }
-
-  .serviceitem .subtitle {
-    text-align: left;
-    margin-left: 0;
-  }
 }
 
 .carousel-item {
@@ -788,4 +639,160 @@ form button.btn.btn-primary.sentState {
 
 form .alert {
   display: none;
+}
+
+/************************ respo *********************/
+
+@media (max-width: 1199.98px) {
+  #elerhetosegek > .container {
+    max-width: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    margin-top: 0;
+  }
+  #bannercontent {
+    padding-bottom: 0;
+    padding-top: var(--navbarheight);
+  }
+  #bannercontent > h1 {
+    font-size: 3rem;
+  }
+  #navigation .nav-item {
+    justify-content: flex-end;
+  }
+  #navigation .nav-link {
+    text-align: right;
+    transform-origin: right;
+    padding: 5px 0;
+  }
+  #navbarNavDropdown {
+    align-items: stretch;
+    justify-content: center;
+    max-width: 100%;
+    padding-right: 10px;
+  }
+  #szolgaltatasok {
+    margin-top: 100vh;
+  }
+  .navbar-brand.stihllg {
+    display: none;
+  }
+  .ajanlat .logo-light {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .family {
+    border-bottom-width: 2px !important;
+  }
+
+  footer .col-md-4 {
+    width: 33%;
+  }
+
+  footer .container {
+    max-width: 100%;
+  }
+
+  footer .col-md-6 {
+    width: 100% !important;
+  }
+
+  .gallery .row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery .txt {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 2% !important;
+  }
+
+  .gallery .txt h4 {
+    margin-bottom: 0;
+  }
+
+  .gallery .pic {
+    width: 100%;
+  }
+
+  #bemutatkozas .display-6,
+  #bemutatkozas p {
+    font-size: 1.2rem;
+  }
+
+  #bemutatkozas .display-6 {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .imagewrap {
+    display: none;
+  }
+
+  footer {
+    padding: 1rem !important;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer img {
+    max-width: 64px;
+  }
+
+  .gallery .row {
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery .txt {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  a.webshop {
+    display: block;
+    width: 64px;
+    position: absolute;
+    top: 33%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .p-6 {
+    padding: 2rem 3rem !important;
+  }
+
+  #bannercontent h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  #bannercontent h1 .small-mobile {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .ajanlat .logo-light {
+    font-size: 2.5rem;
+  }
+
+  .small-mobile {
+    font-size: 65%;
+  }
+
+  .serviceitem .subtitle {
+    text-align: left;
+    margin-left: 0;
+  }
 }
