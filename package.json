@@ -7,12 +7,16 @@
   "author": "Almos Gabor",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "node ./index.js"
+    "build": "node ./index.js",
+    "build:watch": "nodemon index.js"
   },
   "dependencies": {
     "folder-hash": "^4.0.4",
     "fs-extra": "^11.2.0",
     "mustache": "^4.2.0",
     "rimraf": "^5.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

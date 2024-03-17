@@ -5,7 +5,7 @@ const Mustache = require('mustache');
 const { hashElement } = require('folder-hash');
 
 
-const template = fs.readFileSync(path.resolve('./src/index.mustache')).toString();
+const template = fs.readFileSync(path.resolve('./src/new.mustache')).toString();
 
 
 console.log('Creating a hash over the src folder:');
