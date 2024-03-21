@@ -10,6 +10,21 @@
   --navbarheight: 106px;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 section {
   scroll-margin-top: 105px;
 }
@@ -221,13 +236,28 @@ a:visited {
   padding: 20px;
 }
 
-#bannercontent > h1 {
+#bannercontent > .h2 {
   font-size: 4.3rem;
+}
+
+#bannercontent > h1 {
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-#bannercontent > .h4 {
+#bannercontent > .h5 {
   font-weight: 300;
+  padding: 0 0 1rem 0;
+}
+
+#bannercontent .highlight {
+  font-weight: 800;
+  filter: brightness(160%);
+}
+
+#kapcsolat .highlight {
+  font-weight: 600;
+  color: var(--primaryDark);
 }
 
 .bannerlink {
@@ -347,6 +377,7 @@ a#navlogo:visited {
   padding-left: 1.2rem;
   color: var(--tertiaryDark);
   line-height: 1.1;
+  filter: brightness(75%);
 }
 
 /****************** services ******************/
@@ -358,15 +389,16 @@ a#navlogo:visited {
 }
 
 .serviceitem {
-  color: var(--secondaryDark);
+  color: var(--tertiaryDark);
 }
 
 .serviceitem .subtitle {
-  margin-left: 83px;
+  margin-left: 42px;
 }
 
 .serviceitem ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .serviceitem ul li {
@@ -377,9 +409,13 @@ a#navlogo:visited {
 }
 
 .serviceitem img {
-  width: 35px;
+  width: 30px;
   flex-grow: 0;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
+}
+
+.serviceitem h3 {
+  filter: brightness(80%);
 }
 
 .serviceitem h4 {
@@ -422,7 +458,7 @@ a#navlogo:visited {
   grid-template-columns: 48px auto;
   column-gap: 20px;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
 }
 
 .positems p {
@@ -439,11 +475,11 @@ a#navlogo:visited {
   min-height: 350px;
   background-size: cover;
   background-position: center;
+  transition: all 0.2s;
 }
 
 .mapholder:hover {
-  background-size: initial;
-  transition: all 1s;
+  filter: saturate(150%);
 }
 
 .hiddenbtn {
@@ -657,8 +693,8 @@ form .alert {
     padding-bottom: 0;
     padding-top: var(--navbarheight);
   }
-  #bannercontent > h1 {
-    font-size: 3rem;
+  #bannercontent > .h2 {
+    font-size: 2rem;
   }
   #navigation .nav-item {
     justify-content: flex-end;
@@ -773,22 +809,8 @@ form .alert {
     padding: 2rem 3rem !important;
   }
 
-  #bannercontent h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-  }
-
-  #bannercontent h1 .small-mobile {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
   .ajanlat .logo-light {
     font-size: 2.5rem;
-  }
-
-  .small-mobile {
-    font-size: 65%;
   }
 
   .serviceitem .subtitle {

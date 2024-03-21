@@ -36,7 +36,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@400..900&display=swap" rel="stylesheet">
   <!-- bootstrp -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -68,9 +68,10 @@
 
   <div id="bannercontent" class="position-absolute w-100 h-100 bannerContent font-brand">
     {{! <img class="mainLogo mb-4 mx-auto d-block" src="img/klogo_main.svg" alt="SzitaPrint Győr"> }}
-    <h1 class="cwhite text-center">SzitaPrint <span class="small-mobile">Győr</span></h1>
+    <p class="text-center clr-tertiary highlight h2 p-0">Hamarosan nyitunk.</p>
     <p class="text-center clr-tertiary h2 p-0">Jól nyomjuk!</p>
-    <p class="text-center clr-tertiary h5 pt-0">Munkaruhák, pólók, vagy bármi, szitanyomással.</p>
+    <p class="text-center clr-tertiary h5"><span class="highlight">Munkaruhák</span>, <span class="highlight">pólók</span>, vagy bármi, <span class="highlight">szitanyomással</span>.</p>
+    <h1 class="cwhite text-center">SzitaPrint <div class="small">Győr</span></h1>
   </div>
 
   <header id="top" class="sticky-top">
@@ -107,10 +108,10 @@
   </header>
 
   <section id="szolgaltatasok" class="cwhitebg">
-    <div class="container wmax">
+    <div class="container wmax p-0">
       <h2 class="display-5 clr-primary-dark text-center mb-3">Szolgáltatások</span></h2>
       <div class="row">
-        <div class="serviceitem col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+        <div class="serviceitem col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
           <div class="subtitle">
             <h3 class="mb-3">Munkaruha emblémázás</h3>
           </div>
@@ -137,7 +138,7 @@
             </li>
           </ul>
         </div>
-        <div class="serviceitem col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+        <div class="serviceitem col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
           <div class="subtitle">
             <h3 class="mb-3">Póló feliratozás</h3>
           </div>
@@ -164,6 +165,37 @@
             </li>
           </ul>
         </div>
+        <div class="serviceitem col-sm-6 offset-sm-3 offset-md-0 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
+          <div class="subtitle">
+            <h3 class="mb-3">Egyéb szitanyomás</h3>
+          </div>
+          <ul>
+            <li>
+              <img class="icon" src="img/services/napkin.svg" alt="Egyedi szalvéta szitanyomással">
+              <h4>Szalvéta</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/bag.svg" alt="Egyedi vászontáska szitanyomással">
+              <h4>Vászontáska</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/paperbag.svg" alt="Egyedi vászontáska szitanyomással">
+              <h4>Papírtáska</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/winebox.svg" alt="Egyedi borosdoboz szitanyomással">
+              <h4>Borosdoboz</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/planner.svg" alt="Egyedi határidőnapló szitanyomással">
+              <h4>Határidőnapló</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/question.svg" alt="Egyedi termékek szitanyomással">
+              <h4>Egyéb szitanyomás</h4>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -181,7 +213,7 @@
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtoXoc2jjrAcmaEGpzyV7iz96AJv8HD0iI_9zs_GsEqWp5kQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Betöltés…</iframe>
         </div>
       </div>
-      <a href="https://maps.app.goo.gl/qVytCXj5zKkt8gVq8" target="_blank" class="col-lg-6 p-0 mapholder" style="background-image: url(img/map.png);"></a>
+      <a href="https://maps.app.goo.gl/DPQDXSwsbgUnC3ec6" target="_blank" class="col-lg-6 p-0 mapholder" style="background-image: url(img/map.png?{{buildId}});"></a>
     </div>
   </section>
 
@@ -262,37 +294,42 @@
         <img src="img/check.svg" alt="check">
         <p class="lead display-6 d7">Időtálló nyomatok</p>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 positems">
+      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 col-sm-12 positems">
         <img src="img/check.svg" alt="check">
         <p class="lead display-6 d7">Rövid határidők</p>
       </div>
     </div>
   </section>
   
-  <section id="kapcsolat" class="coffeebg">
+  <section id="kapcsolat" class="cwhitebg">
     <div class="container p-5">
-      <h2 class="display-5 capuccino text-center">Elérhetőségek</h2>
+      <h2 class="display-5 clr-primary-dark text-center">Elérhetőségek</h2>
       <hr>
-      <p class="capuccino text-center display-6">Nyitvatartási időben, <span class="cwhite">hétfőtől péntekig 8:00 - 16:00</span> az alábbi elérhetőségeken:</p>
+      <p class="capuccino text-center display-6">Nyitvatartási időben, <span class="highlight">hétfőtől péntekig 8:00 - 16:00</span> az alábbi elérhetőségeken:</p>
     </div>
   </section>
 
   <footer id="elerhetosegek" class="">
     <div class="container row col-md-12 mx-auto p-6">
-      <div class="col-lg-4 col-md-6 col-sm-12 coffee text-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
         <a class="coffee" href="tel:+36205153267"><img class="mb-3" src="img/Mobile.svg" alt="Mobil">
         <p class="lead cwhite bold">+36 20 515 3267</p></a>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 coffee text-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
         <a href="https://www.facebook.com/szitaprintgyor/"
           target="blank"><img class="mb-3" src="img/facebook.svg"
             alt="SzitaPrint">
         <p class="lead cwhite bold">SzitaPrint Győr</p></a>
       </div>
-      <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 col-sm-12 coffee text-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
         <a href="mailto:info@szitaprint.hu" target="blank"><img class="mb-3" src="img/Mail.svg"
             alt="E-Mail">
         <p class="cwhite bold lead">info[a]szitaprint.hu</p></a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
+        <a href="https://maps.app.goo.gl/DPQDXSwsbgUnC3ec6" target="blank"><img class="mb-3" src="img/roundmap.svg"
+            alt="Map">
+        <p class="cwhite bold lead">9025 Győr, Bécsi út 14.</p></a>
       </div>
     </div>
   </footer>
