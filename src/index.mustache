@@ -4,55 +4,338 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="SzitaPrint Győr">
+  <meta name="application-name" content="SzitaPrint Győr">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <meta name="title" content="Szitaprint | Szitanyomás pólókra, munkaruhára és bármi másra">
   <meta name="description"
-    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással. Ezzel a technológiával nem csak ruhákra, de bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
+    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással. Ezzel a technológiával nem csak ruhákra, de majdnem bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://szitaprint.hu/">
   <meta property="og:title" content="SzitaPrint Győr | Szitanyomás pólókra, munkaruhára és bármi másra">
   <meta property="og:description"
-    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással Győrben. Ezzel a technológiával nem csak ruhákra, de bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
-  <meta property="og:image" content="https://www.szitaprint.hu/assets/szitaprint1.png?{{buildId}}">
+    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással Győrben. Ezzel a technológiával nem csak ruhákra, de majdnem bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
+  <meta property="og:image" content="https://www.szitaprint.hu/img/szitaprint.png?{{buildId}}">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://szitaprint.hu/">
   <meta property="twitter:title" content="SzitaPrint Győr | Szitanyomás pólókra, munkaruhára és bármi másra">
   <meta property="twitter:description"
-    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással Győrben. Ezzel a technológiával nem csak ruhákra, de bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
-  <meta property="twitter:image" content="https://www.szitaprint.hu/assets/szitaprint.hu.png">
+    content="Egyedi pólók, munkaruhák nagy tételben szitanyomással Győrben. Ezzel a technológiával nem csak ruhákra, de majdnem bármilyen anyagra tudunk szöveget és mintázatot nyomni, ami különösen megéri ha nagy tételben van szükség rá.">
+  <meta property="twitter:image" content="https://www.szitaprint.hu/img/szitaprint.hu.png">
   <title>SzitaPrint Győr | Szitanyomás pólókra, munkaruhára és bármi másra Győrben</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/styles.css?{{buildId}}">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@400..900&display=swap" rel="stylesheet">
+  <!-- bootstrp -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/overrides.css?{{buildId}}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 
-<body>
-  <div id="main" class="clearfix">
-    <div class="hero-text">
-      <h1 class="display-1">SzitaPrint Győr</h1>
-      <p class="display-6">Hamarosan jövünk...</p>
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="500">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
+  <section id="banner" class="fixed-top zindex-fixed">
+    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+      <div class="carousel-inner">
+        <div class="carousel-item vh-100 active" style="background-image: url(img/banner/k1.jpg)"></div>
+        <div class="carousel-item vh-100" style="background-image: url(img/banner/k2.jpg)"></div>
+        <div class="carousel-item vh-100" style="background-image: url(img/banner/k3.jpg)"></div>
+      </div>
     </div>
+  </section>
+
+  <div id="bannercontent" class="position-absolute w-100 h-100 bannerContent font-brand">
+    {{! <img class="mainLogo mb-4 mx-auto d-block" src="img/klogo_main.svg" alt="SzitaPrint Győr"> }}
+    <p class="text-center clr-tertiary highlight h2 p-0">Hamarosan nyitunk.</p>
+    <p class="text-center clr-tertiary h2 p-0">Jól nyomjuk!</p>
+    <p class="text-center clr-tertiary h5"><span class="highlight">Munkaruhák</span>, <span class="highlight">pólók</span>, vagy bármi, <span class="highlight">szitanyomással</span>.</p>
+    <h1 class="cwhite text-center">SzitaPrint <div class="small">Győr</span></h1>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
+  <header id="top" class="sticky-top">
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light bgclr-primary">
+      <div class="container-fluid">
+        {{! <a id="navlogo" href="#bannercontent"><img src="img/klogo_white.svg" alt="Kurcsics Épületgépészet"></a> }}
+        <a id="navlogo" href="#bannercontent" class="font-brand">SzitaPrint <div class="small">Győr</div></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ajanlatkeres">Ajánlatkérés</a>
+            </li>
+            {{! <li class="nav-item">
+              <a class="nav-link" href="#referenciak">Munkáink</a>
+            </li> }}
+            <li class="nav-item">
+              <a class="nav-link" href="#bemutatkozas">Rólunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#elerhetosegek">Elérhetőségek</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-</html>
+  <section id="szolgaltatasok" class="cwhitebg">
+    <div class="container wmax p-0">
+      <h2 class="display-5 clr-primary-dark text-center mb-3">Szolgáltatások</span></h2>
+      <div class="row">
+        <div class="serviceitem col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
+          <div class="subtitle">
+            <h3 class="mb-3">Munkaruha emblémázás</h3>
+          </div>
+          <ul>
+            <li>
+              <img class="icon" src="img/services/shirt.svg" alt="Pólók emblémázása">
+              <h4>Pólók</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/trousers.svg" alt="Nadrágok emblémázása">
+              <h4>Nadrágok</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/vest.svg" alt="Mellények emblémázása">
+              <h4>Mellények</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/coat.svg" alt="Kabátok emblémázása">
+              <h4>Kabátok</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/question.svg" alt="Ruhák emblémázása">
+              <h4>Egyéb ruházat</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="serviceitem col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
+          <div class="subtitle">
+            <h3 class="mb-3">Póló feliratozás</h3>
+          </div>
+          <ul>
+            <li>
+              <img class="icon" src="img/services/business.svg" alt="Póló feliratozás céges rendezvényekre">
+              <h4>Céges rendezvényekre</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/family.svg" alt="Póló feliratozás családi összejövetelekre">
+              <h4>Családi összejövetelekre</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/sport.svg" alt="Póló feliratozás sportrendezvényekre">
+              <h4>Sportrendezvényekre</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/wedding.svg" alt="Póló feliratozás legény- és lánybúcsúkra">
+              <h4>Legény- és lánybúcsúkra</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/question.svg" alt="Póló feliratozás">
+              <h4>Egyéb rendezvényekre</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="serviceitem col-sm-6 offset-sm-3 offset-md-0 col-md-4 wow fadeInUp animated" data-wow-delay="200ms">
+          <div class="subtitle">
+            <h3 class="mb-3">Egyéb szitanyomás</h3>
+          </div>
+          <ul>
+            <li>
+              <img class="icon" src="img/services/napkin.svg" alt="Egyedi szalvéta szitanyomással">
+              <h4>Szalvéta</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/bag.svg" alt="Egyedi vászontáska szitanyomással">
+              <h4>Vászontáska</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/paperbag.svg" alt="Egyedi vászontáska szitanyomással">
+              <h4>Papírtáska</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/winebox.svg" alt="Egyedi borosdoboz szitanyomással">
+              <h4>Borosdoboz</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/planner.svg" alt="Egyedi határidőnapló szitanyomással">
+              <h4>Határidőnapló</h4>
+            </li>
+            <li>
+              <img class="icon" src="img/services/question.svg" alt="Egyedi termékek szitanyomással">
+              <h4>Egyéb szitanyomás</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ajanlat" id="ajanlatkeres">
+    <div class="row p-0 mapgrd_2 wmax mx-auto">
+      <div class="col-lg-6 cwhite bgclr-tertiary p-4 whalve align-items-stretch text-center"
+        style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <p class="lead">
+          {{! <img class="mainLogo mb-2 mx-auto d-block" src="img/klogo.svg" alt="Kurcsics Épületgépészet"> }}
+          <div class="logo-light">SzitaPrint <div class="small">Győr</div></div>
+          Pólók és munkaruhák feliratozása, emblémázása, vagy egyedi kérések.<br>
+        </p>
+        <div class="gform">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtoXoc2jjrAcmaEGpzyV7iz96AJv8HD0iI_9zs_GsEqWp5kQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Betöltés…</iframe>
+        </div>
+      </div>
+      <a href="https://maps.app.goo.gl/DPQDXSwsbgUnC3ec6" target="_blank" class="col-lg-6 p-0 mapholder" style="background-image: url(img/map.png?{{buildId}});"></a>
+    </div>
+  </section>
+
+  {{! <section id="referenciak" class="coffeebg">
+    <div class="container refsinner capuccino text-center p-5">
+      <h2 class="display-5 text-center">Referencia <span class="bold">munkák</span></h2>
+    </div>
+    <div class="gallery">
+      <?php 
+        $templateType=0;
+        $refs = json_decode(file_get_contents('./js/refs.json'));
+        foreach($refs as $ref) 
+        {
+          if($templateType === 0) {
+            echo '<div class="row">
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic pic2">
+                <div class="itempic" style="background-image: url(\''.$ref->img1.'\'); background-size: cover;"></div>
+              </div>
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic">
+                <div class="itempic" style="background-image: url(\''.$ref->img2.'\'); background-size: cover;"></div>
+              </div>
+              <div class="col-md-4 col-sm-12 galleryitem whalve p-0 txt">
+                <div class="stack d-inline-flex justify-content-center align-items-center w-100 h-100">
+                  <h4 class="display-6 text-center">'.$ref->message.'</h4>
+                </div>
+              </div>
+            </div>';
+            $templateType++;
+          } else if($templateType === 1) {
+            echo '<div class="row">
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic">
+                <div class="itempic" style="background-image: url(\''.$ref->img1.'\'); background-size: cover;"></div>
+              </div>
+              <div class="col-md-4 col-sm-12 galleryitem whalve p-0 txt">
+                <div class="stack d-inline-flex justify-content-center align-items-center w-100 h-100">
+                  <h4 class="display-6 text-center">'.$ref->message.'</h4>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic pic2">
+                <div class="itempic" style="background-image: url(\''.$ref->img2.'\'); background-size: cover;"></div>
+              </div>
+            </div>';
+            $templateType++;
+          } else if($templateType === 2) {
+            echo '<div class="row">
+              <div class="col-md-4 col-sm-12 galleryitem whalve p-0 txt">
+                <div class="stack d-inline-flex justify-content-center align-items-center w-100 h-100">
+                  <h4 class="display-6 text-center">'.$ref->message.'</h4>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic">
+                <div class="itempic" style="background-image: url(\''.$ref->img1.'\'); background-size: cover;"></div>
+              </div>
+              <div class="col-md-4 col-sm-6 galleryitem capuccinobg p-0 pic pic2">
+                <div class="itempic" style="background-image: url(\''.$ref->img2.'\'); background-size: cover;"></div>
+              </div>
+            </div>';
+            $templateType=0;
+          }
+        }
+      ?>
+    </div>
+  </section> }}
+  <section id="bemutatkozas" class="cwhitebg">
+    <div class="contaniner p-6 wmax mx-auto pb-0 clr-tertiary-dark">
+      <h2 class="display-5 clr-primary-dark text-center">Rólunk</h2>
+      <p><span class="clr-primary-dark display-6">1997-től szitázunk</span>, rengeteg változást éltünk meg az évek alatt. Most jött el az idő, hogy az eddig megszerzett tudást, sok-sok  tapasztalatot, egy teljesen új formába öntve, a saját elgondolásunk szerint indítsuk újra.</p>
+      <p><strong>Várjuk szeretettel Ügyfeleinket, akiknek fontos a szakmai tapasztalat, a minőségi munka és a megbízhatóság.</strong></p>
+    </div>
+  </section>
+  <section id="posit" class="capuccinobg o-50">
+    <div class="row white wmax mx-auto p-5 m-0">
+      <div class="col-lg-4 col-md-6 col-sm-12 positems">
+        <img src="img/check.svg" alt="check">
+        <p class="lead display-6 d7">A legmagasabb minőség</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 positems">
+        <img src="img/check.svg" alt="check">
+        <p class="lead display-6 d7">Időtálló nyomatok</p>
+      </div>
+      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 col-sm-12 positems">
+        <img src="img/check.svg" alt="check">
+        <p class="lead display-6 d7">Rövid határidők</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="kapcsolat" class="cwhitebg">
+    <div class="container p-5">
+      <h2 class="display-5 clr-primary-dark text-center">Elérhetőségek</h2>
+      <hr>
+      <p class="capuccino text-center display-6">Nyitvatartási időben, <span class="highlight">hétfőtől péntekig 8:00 - 16:00</span> az alábbi elérhetőségeken:</p>
+    </div>
+  </section>
+
+  <footer id="elerhetosegek" class="">
+    <div class="container row col-md-12 mx-auto p-6">
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
+        <a class="coffee" href="tel:+36205153267"><img class="mb-3" src="img/Mobile.svg" alt="Mobil">
+        <p class="lead cwhite bold">+36 20 515 3267</p></a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
+        <a href="https://www.facebook.com/szitaprintgyor/"
+          target="blank"><img class="mb-3" src="img/facebook.svg"
+            alt="SzitaPrint">
+        <p class="lead cwhite bold">SzitaPrint Győr</p></a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
+        <a href="mailto:info@szitaprint.hu" target="blank"><img class="mb-3" src="img/Mail.svg"
+            alt="E-Mail">
+        <p class="cwhite bold lead">info[a]szitaprint.hu</p></a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 coffee text-center">
+        <a href="https://maps.app.goo.gl/DPQDXSwsbgUnC3ec6" target="blank"><img class="mb-3" src="img/roundmap.svg"
+            alt="Map">
+        <p class="cwhite bold lead">9025 Győr, Bécsi út 14.</p></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>

@@ -770,6 +770,9 @@ form .alert {
 }
 
 @media (max-width: 575.98px) {
+  .positems {
+    justify-content: stretch;
+  }
   .imagewrap {
     display: none;
   }
