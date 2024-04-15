@@ -390,6 +390,8 @@ a#navlogo:visited {
 
 .serviceitem {
   color: var(--tertiaryDark);
+  display: flex;
+  justify-content: center;
 }
 
 .serviceitem .subtitle {
