@@ -688,6 +688,9 @@ form .alert {
 }
 
 @media (max-width: 991.98px) {
+  .positems .d7 {
+    font-size: 1.5rem !important;
+  }
   body {
     margin-top: 0;
   }
@@ -724,6 +727,9 @@ form .alert {
 }
 
 @media (max-width: 767.98px) {
+  .positems {
+    justify-content: stretch;
+  }
   .family {
     border-bottom-width: 2px !important;
   }
@@ -772,8 +778,8 @@ form .alert {
 }
 
 @media (max-width: 575.98px) {
-  .positems {
-    justify-content: stretch;
+  .positems .d7 {
+    font-size: 180% !important;
   }
   .imagewrap {
     display: none;
@@ -783,8 +789,8 @@ form .alert {
     padding: 1rem !important;
   }
 
-  footer p {
-    display: none;
+  footer p.lead {
+    font-size: 0.8rem;
   }
 
   footer img {
@@ -811,11 +817,16 @@ form .alert {
   }
 
   .p-6 {
-    padding: 2rem 3rem !important;
+    padding: 0 !important;
+    padding-top: 1rem !important;
   }
 
   .ajanlat .logo-light {
     font-size: 2.5rem;
+  }
+
+  .serviceitem {
+    justify-content: center;
   }
 
   .serviceitem .subtitle {
